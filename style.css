@@ -14,6 +14,32 @@ p{
     padding: 0;
 }
 
+.navbar{
+    display: none;
+}
+
+.navbar h1{
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
 nav{
     background-color: rgb(28, 28, 28);
     display: flex;
@@ -222,4 +248,115 @@ footer p {
     padding: 1em 1em;
     text-align: center;
     color: aliceblue;
+}
+
+@media (max-width: 865px){
+    .profile{
+        height: 240px;
+        width: 240px;
+    }
+    
+    #aboutMe{
+        padding-top: 3em;
+        flex-direction: column;
+    }
+
+    .frame{
+        height: 240px;
+    }
+
+    .frame img{
+        height: 240px;
+    }
+
+    .aboutMe{
+        padding: 0.3em;
+    }
+}
+
+@media (max-width:760px){
+    .navbar{
+        background-color: rgb(28, 28, 28);
+        display: flex;
+        flex-direction: column;
+        padding: 1em 8em;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar h1{
+        margin-bottom: 1em;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    #home{
+        padding-top: 1em;
+    }
+
+    .container{
+        padding: 1em 3em;
+    }
+
+    
+    #aboutMe{
+        flex-direction: column;
+    }
+
+    .aboutMe{
+        padding: 0.3em;
+    }
+}
+
+@media (max-width:660px){
+    .navbar{
+        display: block;
+    }
+
+    .navbar h1{
+        text-align: center;
+    }
+
+    .container{
+        padding: 1em 3em;
+    }
+
+    #home{
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    #home img{
+        align-self: center;
+    }
+
+    #home button{
+        margin-bottom: 2em;
+    }
+
+    #aboutMe{
+        flex-direction: column;
+    }
+
+    .aboutMe{
+        padding: 0.3em;
+    }
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-item{
+        margin-bottom: 2em;
+    }
 }
