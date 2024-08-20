@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/img/Logo.png" type="image/x-icon">
@@ -12,52 +14,54 @@
 </head>
 <body>
     <header>
-        <nav aria-label="nav">
-            <div>
+        <nav aria-label="nav" style="overflow: hidden;">
+            <div class="animate__animated animate__fadeInDown animate__fast">
                 <a href="#home" >
                     <img style="width: 50px;" src="/img/Logo.png" alt="Logo">
                 </a>
             </div>
-            <ul>
-                <li><a href="#home" >Home</a></li>
-                <li><a href="#aboutMe" >About Me</a></li>
-                <li><a href="#mySkills" >Skills</a></li>
-                <li><a href="#contact" >Contact</a></li>
+            <ul style="overflow: hidden;">
+                <li><a href="#home" style="display: inline-block;" class="animate__animated animate__slideInDown ">Home</a></li>
+                <li><a href="#aboutMe" style="display: inline-block;" class="animate__animated animate__slideInDown animate__delay-2s">About Me</a></li>
+                <li><a href="#mySkills" style="display: inline-block;" class="animate__animated animate__slideInDown animate__delay-3s">Skills</a></li>
+                <li><a href="#projects" style="display: inline-block;" class="animate__animated animate__slideInDown animate__delay-4s">Projects</a></li>
+                <li><a href="#contact" style="display: inline-block;" class="animate__animated animate__slideInDown animate__delay-5s">Contact</a></li>
             </ul>
         </nav>
-        <nav class="navbar" aria-label="nav">
+        <nav class="navbar" aria-label="nav"  style="overflow: hidden">
             <div>
                 <a href="#home" >
-                    <img style="width: 50px;" src="/img/Logo.png" alt="Logo">
+                    <img class="animate__animated animate__fadeInDown" style="width: 50px;" src="/img/Logo.png" alt="Logo">
                 </a>
                 <button class="menu" id="menu" onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
             </div>
             <ul id="toggleMenu">
-                <li><a href="#home" >Home</a></li>
-                <li><a href="#aboutMe" >About Me</a></li>
-                <li><a href="#mySkills" >Skills</a></li>
-                <li><a href="#contact" >Contact</a></li>
+                <li class="animate__animated animate__fadeInRight"><a href="#home" >Home</a></li>
+                <li class="animate__animated animate__fadeInRight animate__delay-2s"><a href="#aboutMe" >About Me</a></li>
+                <li class="animate__animated animate__fadeInRight animate__delay-3s"><a href="#mySkills" >Skills</a></li>
+                <li class="animate__animated animate__fadeInRight animate__delay-4s"><a href="#projects" >Projects</a></li>
+                <li class="animate__animated animate__fadeInRight animate__delay-5s"><a href="#contact" >Contact</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main>
-        <section id="home" class="container tabcontent">
-            <div>
-                <h1>Hello</h1>
-                <p>I'm <span>Faza Alhakim</span></p>
-                <p>Fullstack Web Developer</p>
-                <button><a href="#aboutMe">About Me</a></button>
+        <section id="home" class="container tabcontent" style="overflow: hidden;">
+            <div style="overflow: hidden;">
+                <h1 class="animate__animated animate__fadeInDown">Hello</h1>
+                <p class="animate__animated animate__fadeInDown">I'm <span>Faza Alhakim</span></p>
+                <p class="animate__animated animate__fadeInDown">Fullstack Web Developer</p>
+                <button class="animate__animated animate__fadeInDown"><a href="#aboutMe">About Me</a></button>
             </div>
-            <img class="profile" src="img/profile.jpeg" alt="Profile">
+            <img class="profile animate__animated animate__fadeIn animate__delay-2s" src="img/profile.jpeg" alt="Profile">
         </section>
 
         <section id="aboutMe" class="container tabcontent">
-            <div class="frame">
+            <div class="frame" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">
                 <img src="img/profile.jpeg" alt="Profile">
             </div>
-            <div class="aboutMe">
+            <div class="aboutMe" data-aos="fade-left" data-aos-duration="1500">
                 <h1>About Me</h1>
                 <p> 
                     Hello there! I am a passionate and versatile full-stack web developer with a keen interest in exploring the latest cutting-edge technologies. My journey in the world of web development has been nothing short of exhilarating, and I constantly strive to enhance my skill and embrace emerging trends in the industry.
@@ -67,31 +71,31 @@
         </section>
 
         <section id="mySkills" class="container tabcontent">
-            <div class="underline">
+            <div class="underline" data-aos="zoom-in-down" data-aos-duration="1000">
                 <h1 class="title">My Skills</h1>
             </div>
             <div class="grid-container">
-                <div class="grid-item item1">
+                <div class="grid-item item1" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-offset="100">
                     <p><i class="fa-brands fa-html5"></i> <br> HTML</p>
                 </div>
-                <div class="grid-item item2">
+                <div class="grid-item item2" data-aos="zoom-out-right" data-aos-duration="1500" data-aos-offset="100">
                     <p><i class="fa-brands fa-css3-alt"></i> <br> CSS</p>
                 </div>
-                <div class="grid-item item3">
+                <div class="grid-item item3" data-aos="zoom-out-left" data-aos-duration="1500" data-aos-offset="100">
                     <p><i class="fa-brands fa-react"></i> <br> React JS</p>
                 </div>
-                <div class="grid-item item4">
+                <div class="grid-item item4" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-offset="100">
                     <p><i class="fa-brands fa-node-js"></i> <br> Node JS</p>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="container tabcontent">
-            <div class="underline">
+            <div class="underline" data-aos="zoom-in-down" data-aos-duration="1000">
                 <h1 class="title">Projects</h1>
             </div>
             <div class="grid-container">
-                <div class="grid-item projects1 project-item1">
+                <div class="grid-item projects1 project-item1" data-aos="fade-up-right" data-aos-duration="1600">
                     <a target="_blank" href="https://fazalhakim.com">
                         <h1>Portfolio Website</h1>
                     </a>
@@ -101,7 +105,7 @@
                         <i class="fa-brands fa-js icon-project"></i>
                     </div>
                 </div>
-                <div class="grid-item projects2 project-item2">
+                <div class="grid-item projects2 project-item2" data-aos="fade-up-left" data-aos-duration="1600">
                     <a target="_blank" href="https://elearning1.fazalhakim.my.id">
                         <h1>E-Learning Web App</h1>
                     </a>
@@ -123,11 +127,15 @@
         </section>
     </main>
 
-    <footer>
+    <footer >
         <p>&copyFaza Alhakim</p>
     </footer>
 
     <script src="https://kit.fontawesome.com/4f6a5fd781.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
