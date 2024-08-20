@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     box-sizing: border-box;
     margin: 0;
@@ -77,15 +81,15 @@ nav ul li a{
 
 button{
     background-color: transparent;
-    color: goldenrod;
-    border: 0.1em solid goldenrod;
+    color: #FFD700;
+    border: 0.1em solid #FFD700;
     border-radius: 0.5em;
     padding: 0.5em 1em;
 }
 
 button:hover{
-    background-color: rgb(200, 149, 21);
-    color: aliceblue;
+    background-color: #FFD700;
+    color: #303030;
 }
 
 .menu {
@@ -139,7 +143,7 @@ section a{
 }
 
 #home span{
-    color: goldenrod;
+    color: #FFD700;
 }
 
 #home p:nth-child(3){
@@ -157,7 +161,7 @@ section a{
 }
 
 .frame{
-    border: 0.5em solid goldenrod;
+    border: 0.5em solid #FFD700;
     border-radius: 0.1em;
     height: fit-content;
     align-self: center;
@@ -256,7 +260,7 @@ section a{
 }
 
 .contact i{
-    color: goldenrod;
+    color: #FFD700;
 }
 
 #contact a{
@@ -265,7 +269,7 @@ section a{
 }
 
 #contact a:hover{
-    color: goldenrod;
+    color: #FFD700;
 }
 
 footer{
