@@ -195,7 +195,7 @@ section p{
 
 .item1{
     background-image: url(img/programming.jpg);
-    background-color: skyblue;
+    background-color: rgb(237, 159, 64);
 }
 
 .item2{
@@ -206,7 +206,7 @@ section p{
 
 .item3{
     background-image: url(img/Graphic\ designer.png);
-    background-color: rgb(237, 159, 64);
+    background-color: rgb(46, 93, 112);
 }
 
 .item4{
