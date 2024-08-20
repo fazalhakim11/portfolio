@@ -109,6 +109,11 @@ section p{
     color: antiquewhite;
 }
 
+section a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     padding: 1em 8em;
     margin: 0;
@@ -370,9 +375,5 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .grid-item{
-        margin-bottom: 2em;
     }
 }
