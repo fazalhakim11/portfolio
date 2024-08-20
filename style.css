@@ -175,8 +175,8 @@ section a{
 }
 
 #mySkills{
-    padding-top: 5em;
-    padding-bottom: 6em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 #mySkills h1{
@@ -196,27 +196,44 @@ section a{
     width: 20em;
     padding: 4em 0;
     background-blend-mode:multiply ;
+    background-color: rgb(95, 95, 95);
+}
+
+.grid-item:hover{
+    background-color: rgb(45, 45, 45);
 }
 
 .item1{
     background-image: url(img/programming.jpg);
-    background-color: rgb(237, 159, 64);
+}
+
+.item1:hover p{
+    color: rgb(237, 159, 64);
 }
 
 .item2{
-    background-image: url(img/programming.jpg);
+    background-image: url(img/Coding1.jpg);
     grid-column: 2;
-    background-color: palevioletred;
+}
+
+.item2:hover p {
+    color:rgb(50, 93, 233)
 }
 
 .item3{
-    background-image: url(img/Graphic\ designer.png);
-    background-color: rgb(46, 93, 112);
+    background-image: url(img/Coding2.jpg);
+}
+
+.item3:hover p {
+    color: rgb(50, 93, 233)
 }
 
 .item4{
-    background-image: url(img/video\ editing.jpg);
-    background-color: rgb(31, 167, 31);
+    background-image: url(img/Coding3.jpg);
+}
+
+.item4:hover p {
+    color: rgb(50, 233, 50)
 }
 
 .contact{
