@@ -11,9 +11,11 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="nav">
             <div>
-                <h1>FA</h1>
+                <a href="#home" >
+                    <img style="width: 50px;" src="/img/Logo.png" alt="Logo">
+                </a>
             </div>
             <ul>
                 <li><a href="#home" >Home</a></li>
@@ -22,10 +24,12 @@
                 <li><a href="#contact" >Contact</a></li>
             </ul>
         </nav>
-        <div class="navbar">
+        <nav class="navbar" aria-label="nav">
             <div>
-                <h1>FA</h1>
-                <a class="menu" id="menu" onclick="toggle()" href=""><i class="fa-solid fa-bars"></i></a>
+                <a href="#home" >
+                    <img style="width: 50px;" src="/img/Logo.png" alt="Logo">
+                </a>
+                <button class="menu" id="menu" onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
             </div>
             <ul id="toggleMenu">
                 <li><a href="#home" >Home</a></li>
@@ -33,7 +37,7 @@
                 <li><a href="#mySkills" >Skills</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
-        </dic>
+        </nav>
 
     </header>
 
@@ -45,12 +49,12 @@
                 <p>Fullstack Web Developer</p>
                 <button>About Me</button>
             </div>
-            <img class="profile" src="img/profile.jpeg" alt="Profile Picture">
+            <img class="profile" src="img/profile.jpeg" alt="Profile">
         </section>
 
         <section id="aboutMe" class="container tabcontent">
             <div class="frame">
-                <img src="img/profile.jpeg" alt="Profile Picture">
+                <img src="img/profile.jpeg" alt="Profile">
             </div>
             <div class="aboutMe">
                 <h1>About Me</h1>

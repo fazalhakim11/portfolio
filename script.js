@@ -1,7 +1,7 @@
 // document.getElementById("menu").addEventListener("click", toggle())
 
 function toggle() {
-    var toggleMenu = document.getElementById("toggleMenu")
+    const toggleMenu = document.getElementById("toggleMenu")
     if (toggleMenu.style.display === "flex") {
         toggleMenu.style.display = "none"   
     } else {
