@@ -225,7 +225,7 @@ section a{
 }
 
 .item1:hover p{
-    color: rgb(237, 159, 64);
+    color: #f06529;
 }
 
 .item2{
@@ -234,7 +234,7 @@ section a{
 }
 
 .item2:hover p {
-    color:rgb(50, 93, 233)
+    color: #2965f1
 }
 
 .item3{
@@ -242,7 +242,7 @@ section a{
 }
 
 .item3:hover p {
-    color: rgb(50, 93, 233)
+    color: #61DBFB
 }
 
 .item4{
@@ -250,7 +250,7 @@ section a{
 }
 
 .item4:hover p {
-    color: rgb(50, 233, 50)
+    color: #3c873a
 }
 
 #projects {
@@ -267,23 +267,23 @@ section a{
 }
 
 .projects1:hover .fa-html5{
-    color: orange;
+    color: #f06529;
 }
 
 .projects1:hover .fa-css3-alt{
-    color: rgb(81, 113, 227);
+    color: #2965f1;
 }
 
 .projects1:hover .fa-js{
-    color: yellow
+    color: #f0db4f
 }
 
 .projects2:hover .fa-react {
-    color:rgb(64, 114, 207);
+    color: #61DBFB;
 }
 
 .projects2:hover .fa-node-js {
-    color:rgb(83, 207, 64);
+    color:#3c873a;
 }
 
 .icon-project {
